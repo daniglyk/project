@@ -1,0 +1,173 @@
+#HOME {
+	background-color: #FED100;
+	position: absolute;
+    height: 650px;
+    width: 1536px;
+	left: 0;
+	top: 0;
+}
+
+ul.strMenu li {
+	display: inline-block;
+	margin: 0 10px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #333333;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;	
+}
+
+.menu {
+	width: 700px;
+	height: 40px;
+	position: absolute;
+	right: 360px;
+	top: 33px;	
+}
+
+.menuName {
+	position: absolute;
+	left: 250px;
+	top: 10px;	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+}
+
+.number {
+	position: absolute;
+	right: 300px;
+	top: 20px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+}
+.WeDes {
+	position: absolute;	
+	top: 90px;
+	left: 250px;
+	width: 220px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 105.4%;
+}
+
+.WeAre {
+	position: absolute;	
+	top: 250px;
+	left: 250px;
+	width: 440px;	
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+}
+
+.cont {
+	position: absolute;	
+	top: 340px;
+	left: 250px;
+	width: 304px;
+	height: 60px;
+	background-color:#FF352B;
+	border-color: #FF352B;
+	color:#FFF;
+	text-align:center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.cont a {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);	
+}
+
+.img1 {
+	position: absolute;
+width: 553px;
+height: 629px;
+left: 823px;
+top: 21px;
+}
+
+.img2 {
+	position: absolute;
+	left: 15.99%;
+	right: 81.31%;
+	top: 79.41%;
+	bottom: 89.88%;
+}
+
+.img3 {
+	position: absolute;
+	left: 26.04%;
+	right: 71.88%;
+	top: 79.41%;
+	bottom: 89.9%;
+}
+
+.img4 {
+	position: absolute;
+	left: 34.74%;
+	right: 63.12%;
+	top: 79.41%;
+	bottom: 89.85%;
+}
+
+.truck {
+	position: absolute;
+	width: 91px;
+	height: 42px;
+	left: 300px;
+	top: 500px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.vector111 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	position: absolute;
+	width: 90px;
+	height: 42px;
+	left: 445px;
+	top: 500px;
+}
+
+.vector11{
+	position: absolute;
+	width: 136px;
+	height: 42px;
+	left: 580px;
+	top: 500px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+}
+
