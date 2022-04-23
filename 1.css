@@ -211,3 +211,108 @@ a:hover {
 .price {
 	font-size: 30px;
 }
+
+.fourth__block__title {
+	text-align: center;
+	height: 8rem;
+}
+
+.buttons_four {
+	display: flex;
+	gap: 1rem;
+}
+
+.fourth__block__button {
+	border: 1px solid #EBEBEB;
+	font-size: 20px;
+	display: inline-block;
+	cursor: pointer;
+	flex: 0 1 50%;
+	padding: 1rem 6rem;
+	text-align:center;
+	background: #fff;
+}
+
+.fourth__block__button:hover {
+	border: 1px solid #Fed100;
+}
+
+.fourth__block__window {
+	display: flex;
+}
+
+.left__fourth__block {
+	width: 23rem;
+}
+
+.fourth__block__buttons {
+	padding: 1rem 5rem;
+	color: var(--white);
+	background-color: var(--yellow);
+	display: inline-block;
+	cursor: pointer;
+}
+
+.fourth__block__buttons:hover {
+	background-color:#c3a004;
+}
+
+.fourth__block__window1 {
+	display: none;
+}
+
+.fourth__block__window2 {
+	display: none;
+}
+
+.fifth__block__title {
+	text-align: center;
+}
+
+.fifth__block__windows {
+	display: flex;
+}
+
+.fifth__button {
+	border: 1px solid #333333;
+	font-size: 20px;
+	display: inline-block;
+	cursor: pointer;
+	flex: 0 1 50%;
+	padding: 1rem 6rem;
+	text-align:center;
+	background: #fed100;
+}
+
+.fifth__button:hover {
+	background: #fff;
+	border: none;
+}
+
+.fifth__block {
+	background:#fed100;
+}
+
+.fifth__block__window__one {
+	width: 26rem;
+	height: 20rem;
+}
+
+.fifth__block__window__two {
+	width: 26rem;
+	height: 20rem;
+}
+
+.fifth__block__window__three {
+	width: 26rem;
+	height: 20rem;
+}
+
+.fifth__button1 {
+	text-align: center;
+}
+
+span {
+	text-decoration: underline;
+}
+
