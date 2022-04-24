@@ -316,3 +316,242 @@ span {
 	text-decoration: underline;
 }
 
+input {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom: 1px solid #333333;
+}
+
+select {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom: 1px solid #333333;
+}
+
+#point {
+	margin: 0 15% 0 20%;
+}
+
+.sixth__block__title {
+	
+}
+
+.name__number {
+	display: flex;
+	gap: 2rem;
+	
+}
+
+.name {
+	width: 40%;
+}
+
+.text__name {
+	width: 90%;
+}
+
+.numberr {
+	width: 50%;
+}
+
+.text__numberr {
+	width: 70%;
+}
+
+.region__town {
+	display: flex;
+	gap: 2rem;
+	
+}
+
+.region {
+	width: 40%;
+}
+
+.town {
+	width: 50%;
+}
+
+.payment__title { 
+	
+}
+
+.services__title {
+	
+}
+.payment__buttons {
+	display: flex;
+  gap: 2rem;
+
+}
+
+.sixth__button {
+	padding: 1rem 6rem;
+	color: var(--white);
+	background-color: var(--red);
+	display: inline-block;
+	cursor: pointer;
+	height: 3.1rem;
+	font-size: 16px;
+}
+
+.sixth__button:hover {
+	background-color: var(--orange);
+}
+
+#time {
+	font-size: 86px;
+	width: 23.5rem;
+	height: 8rem;
+}
+
+.time__button {
+	display: flex;
+}
+
+.give {
+	display: flex;
+}
+
+.services {
+	gap: 4rem;
+}
+
+.services__inputs1 {
+	display: flex;
+	gap: 0.6rem;
+}
+
+.services__inputs2 {
+	display: flex;
+	gap: 2rem;
+}
+
+.map {
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+
+.call{
+	border: 1px solid #333333;
+	font-size: 20px;
+	display: inline-block;
+	cursor: pointer;
+	flex: 0 1 50%;
+	padding: 1rem 6rem;
+	text-align:center;
+	background: #fed100;
+}
+
+.call:hover {
+	background: #fff;
+	border: none;
+}
+
+.end {
+	background:#fed100;
+}
+
+#contact {
+	display: flex;
+	gap: 4rem;
+}
+
+.menu__end1 {
+	line-height: 2;
+	font-size: 20px;
+}
+
+.name__end__title {
+	font-size: 30px;
+}
+
+.feedback__end {
+	text-align: center;
+}
+
+.region__select {
+	width: 90%;
+}
+
+.town__select {
+	width: 70%;
+}
+
+.title__sixth {
+	font-size: 20px;
+}
+ 
+input[type="checkbox"] {
+	display: none;
+}
+
+label {
+	padding-left: 20px;
+}
+
+label[class="first__label"]::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 2px solid rgba(51, 51, 51, 0.4);
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label[class="first__label"]::before {
+	content: url(input1.png);
+	text-align: center;
+	border: 2px solid #fed100;
+	border-radius: 50%;
+
+}
+
+label[class="second__label"]::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 2px solid rgba(51, 51, 51, 0.4);
+	border-radius: 20%;
+	vertical-align: middle;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label[class="second__label"]::before {
+	content: url(input2.png);
+	text-align: center;
+	border: 2px solid #fed100;
+	border-radius: 20%;
+
+}
+
+label[class="third__label"]::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border: 2px solid #333333;
+	border-radius: 20%;
+	vertical-align: middle;
+	margin-left: -16px;
+	margin-right: 16px;
+}
+
+input[type="checkbox"]:checked + label[class="third__label"]::before {
+	content: url(input3.png);
+	text-align: center;
+	border: none;
+	border-radius: 20%;
+
+}
+  

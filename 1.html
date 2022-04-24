@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
     <title>Данила портфолио</title>
     <link rel="stylesheet" type="text/css" href="1.css">
+    <script src="https://kit.fontawesome.com/6316a9944b.js" crossorigin="anonymous"></script>
     
 </head>
 
 <body>
-    <div class="banner">
+    <div class="banner" id="main">
         <div class="container">
             <header class="header">
                 <div class="header__logo">
@@ -16,10 +17,10 @@
                 </div>
 
                 <nav class="header__menu">
-                    <a href="#" class="header__link">Цены</a>
-                    <a href="#" class="header__link">Автопарк</a>
-                    <a href="#" class="header__link">Отзывы</li>
-                    <a href="#" class="header__link">Контакты</li>
+                    <a href="#price" class="header__link">Цены</a>
+                    <a href="#auto" class="header__link">Автопарк</a>
+                    <a href="#feedback" class="header__link">Отзывы</a>
+                    <a href="#contact" class="header__link">Контакты</a>
                 </nav>
 
                 <a href="tel:8(029)-999-12-1" class="header__phone">8(029)-999-12-13</a>
@@ -98,7 +99,7 @@
      </div>       
     </div>
 
-    <div class="container">
+    <div class="container" id="price">
         <div class="third__block__title">
             <h1 class="third__title">Цены</h1>
             <h2 class="widnow__title">Фиксированная стоимость на переезд под ключ</h2>
@@ -135,7 +136,7 @@
         </div>    
     </div>
 
-    <div class="container">
+    <div class="container" id="auto">
         <div class="fourth__block__title">
             <h1 class="fourth__title">Автопарк</h1>
             <h2 class="fourth__title">10 видов автомобилей от 800 кг до 10 тонн</h2>
@@ -189,7 +190,7 @@
         </div>
     </div>
 
-    <div class="fifth__block">
+    <div class="fifth__block" id="feedback">
      <div class="container">
         <br /><br /><h1 class="fifth__block__title">Отзывы</h1>
         
@@ -226,6 +227,160 @@
             <div class="fifth__button">Все отзывы</div>
         </div><br /><br />
      </div>   
+    </div>
+
+    <div class="container" id="point">
+        <div class="sixth__block__title">
+            <h1>Закажи переезд прямо сейчас со скидкой %</h1>
+            <p>Мы перезвоним в течении 10 секунд</p>
+        </div>
+
+        <div class="name__number">
+            <div class="name">    
+                <input type="text" placeholder="Ваше имя" class="text__name">
+            </div>
+            <div class="numberr">
+                <input type="text" placeholder="Телефон" class="text__numberr">
+            </div>
+        </div>
+
+        <div class="region__town">
+            <div class="region">    
+                <h1 class="title__sixth">Укажите область</h1>
+                <select name="region" class="region__select">
+                    <option value="1">Бресткая</option>
+                    <option value="2">Витебская</option>
+                    <option value="3">Гомельская</option>
+                    <option value="4">Гродненская</option>
+                    <option value="5">Минская</option>
+                    <option value="6">Могилевская</option>
+                    <option value="7">г. Минск</option>
+                </select>
+            </div>
+            <div class="town">
+                <h1 class="title__sixth">Укажите город</h1>
+                <select name="town" class="town__select">
+                    <option value="1">Мозырь</option>
+                    <option value="2">Гомель</option>
+                    <option value="3">Речица</option>
+                    <option value="4">Светлогорск</option>
+                    <option value="5">Жлобин</option>
+                    <option value="6">Туров</option>
+                    <option value="7">Житковичи</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="payment">
+            <div class="payment__title">    
+                <h1 class="title__sixth">Способ оплаты</h1>
+            </div>    
+            <div class="payment__buttons">
+                <input class="first__input" type="checkbox" id="nali" class="custom__checkbox"><label for="nali" class="first__label">Наличными курьеру</label>
+                <input class="first__input" type="checkbox" id="karta" class="custom__checkbox"><label for="karta" class="first__label">Картой курьеру</label>
+                <input class="first__input" type="checkbox" id="bank" class="custom__checkbox"><label for="bank" class="first__label">Банковский перевод</label>
+            </div>
+        </div>
+
+        
+        <div class="services">
+                <div class="services__title">
+                    <h1 class="title__sixth">Дополнительные услуги</h1>
+                </div>
+            <div class="services__inputs">
+                <div class="services__inputs1">
+                    <input type="checkbox" id="zamer"><label for="zamer" class="second__label">Вызов замерщика</label>
+                    <input type="checkbox" id="boxes"><label for="boxes" class="second__label">Упаковка для хрупких предметов</label>
+                    <input type="checkbox" id="kran"><label for="kran" class="second__label">Кран</label>
+                </div><br />
+                <div class="services__inputs2">
+                    <input type="checkbox" id="construct"><label for="construct" class="second__label">Сборка мебели</label>
+                    <input type="checkbox" id="kryp"><label for="kryp" class="second__label">Крупногабаритные предметы</label>
+                </div>
+            </div>        
+        </div><br /><br /><br />
+
+        
+        <div class="time__button">
+                <div id="time"></div>
+                    <script type="text/javascript">
+                        function zero_first_format(value)
+                        {
+                            if (value < 10)
+                            {
+                                value='0'+value;
+                            }
+                            return value;
+                        }
+                        function date_time()
+                        {
+                            var current_datetime = new Date()
+                            var hours = zero_first_format(current_datetime.getHours());
+                            var minutes = zero_first_format(current_datetime.getMinutes());
+                            var seconds = zero_first_format(current_datetime.getSeconds());
+            
+                            return hours+":"+minutes+":"+seconds;
+                        }
+                        document.getElementById('time').innerHTML = date_time();
+                    </script>
+                    <div class="button__give">    
+                        <br /><div class="button__of">
+                            <div class="sixth__button">Заказать со скидкой</div>
+                        </div><br />
+                        <div class="give">
+                            <input type="checkbox" checked id="cogl"><label for="cogl" class="third__label">Даю согласие на обработку данных</label>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.3790976537516!2d23.69460031579153!3d52.091031879735205!2m3
+        !1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf0d6c7cb8f%3A0x5d0b2cc4f645f8ca!2z0YPQuy4g0JHRg9C00ZHQvdC90L7Qs9C-IDY0LCDQk
+        dGA0LXRgdGC!5e0!3m2!1sru!2sby!4v1650751513319!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading=
+        "lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    
+
+    <div class="end">
+        <div class="container" id="contact">
+            <div class="name__end">
+                <h1 class="name__end__title">MOVEE</h1>
+                <p>Политика конфиденциальности</p>
+                <p>Соглашение на обработку перосанльных данных</p>
+            </div>
+            <div class="menu__end">
+                <br /><div class="main__end">
+                <a href="#main" class="menu__end1">Главная</a>
+                </div>
+                <div class="price__end">
+                <a href="#price" class="menu__end1">Цены</a>
+                </div>
+                <div class="auto__end">
+                <a href="#auto" class="menu__end1">Автопарк</a>
+                </div>
+                <div class="feedback__end1">
+                <a href="#feedback" class="menu__end1">Отзывы</a>
+                </div>
+                <div class="contact__end">
+                <a href="#contact" class="menu__end1">Контакты</a>
+                </div>
+            </div>
+            <div class="feedback__end">
+            <br /><br /><div class="call">Обратный звонок</div><br /><br />
+                
+                <div class="number__end">
+                    <a href="tel:8(029)-999-12-1" class="header__phone">8(029)-999-12-13</a>
+                </div><br />
+                <div class="ceti">
+                    <a href="https://www.instagram.com/badgalriri/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://vk.com/durov"><i class="fa-brands fa-vk fa-2xl" target="_blank"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                </div>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
