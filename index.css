@@ -36,7 +36,14 @@ a:hover {
 	max-width: 77rem;
 	margin: 0 auto;
 	padding: 0 1rem;
+	margin-bottom: 4rem;
 }
+.container1 {
+	max-width: 77rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -63,6 +70,12 @@ a:hover {
 
 .banner__title {
 	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+
+.banner__subtitle {
+	font-size: 30px;
+	margin-bottom: 3rem;
 }
 
 .banner__button {
@@ -71,6 +84,7 @@ a:hover {
 	background-color: var(--red);
 	display: inline-block;
 	cursor: pointer;
+	margin-bottom: 3rem;
 }
 
 .banner__button:hover {
@@ -89,7 +103,7 @@ a:hover {
 
 .banner__image {
 	max-width: 30rem;
-	margin: -4rem auto 0 auto;
+	margin: 0 auto 0 auto;
 
 }
 
@@ -116,71 +130,49 @@ a:hover {
 }
 
 .all__number {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem 1.5rem;
 }
 
 .one__and__two {
-	width: 68rem;
-	height: 7rem;
+	
 	flex: 0 1 50%;
 }
 
 .three__and__four {
-	width: 68rem;
-	height: 7rem;
+	
 	flex: 0 1 50%;
 }
 
 .number__plus {
 	display: flex;
-	align-items: center;
-	gap: 1.5rem;
+	gap: 2rem;
 }
 
 .landing__info {
-	height: 30rem;
+	height: 40%;
 }
 
 .landing__window {
 	flex: 0 1 80%;
 }
 
-.third__block__window1 {
-	width: 26rem;
-	height: 36rem;
+.third__block__window {
+	width: 100%;
+	height: 100%;
 	border: 1px solid #EBEBEB;
 	text-align: center;
 }
 
-.third__block__window1:hover {
-	border: 1px solid #FED100;
-}
-
-.third__block__window2 {
-	width: 26rem;
-	height: 36rem;
-	border: 1px solid #EBEBEB;
-	text-align: center;
-}
-
-.third__block__window2:hover {
-	border: 1px solid #FED100;
-}
-
-.third__block__window3 {
-	width: 26rem;
-	height: 36rem;
-	border: 1px solid #EBEBEB;
-	text-align: center;
-}
-
-.third__block__window3:hover {
+.third__block__window:hover {
 	border: 1px solid #FED100;
 }
 
 .all__window {
-	display: flex;
-	gap: 0.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0 1.5rem;
 }
 
 .third__block__title {
@@ -190,6 +182,7 @@ a:hover {
 
 .widnow__title {
 	font-size: 24px;
+	margin-bottom: 3rem;
 }
 
 .third__title {
@@ -202,6 +195,8 @@ a:hover {
 	background-color: var(--yellow);
 	display: inline-block;
 	cursor: pointer;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
 }
 
 .third__block__button:hover {
@@ -210,24 +205,24 @@ a:hover {
 
 .price {
 	font-size: 30px;
+	margin-top: 4rem;
 }
 
 .fourth__block__title {
 	text-align: center;
-	height: 8rem;
+	height: 100%;
 }
 
 .buttons_four {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 1rem;
+	margin-bottom: 2rem;
 }
 
 .fourth__block__button {
 	border: 1px solid #EBEBEB;
 	font-size: 20px;
-	display: inline-block;
-	cursor: pointer;
-	flex: 0 1 50%;
 	padding: 1rem 6rem;
 	text-align:center;
 	background: #fff;
@@ -238,11 +233,12 @@ a:hover {
 }
 
 .fourth__block__window {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .left__fourth__block {
-	width: 23rem;
+	width: 46%;
 }
 
 .fourth__block__buttons {
@@ -251,6 +247,7 @@ a:hover {
 	background-color: var(--yellow);
 	display: inline-block;
 	cursor: pointer;
+	margin-top: 2rem;
 }
 
 .fourth__block__buttons:hover {
@@ -259,10 +256,12 @@ a:hover {
 
 .fourth__block__window1 {
 	display: none;
+	grid-template-columns: 1fr 1fr;
 }
 
 .fourth__block__window2 {
 	display: none;
+	grid-template-columns: 1fr 1fr;
 }
 
 .fifth__block__title {
@@ -270,7 +269,8 @@ a:hover {
 }
 
 .fifth__block__windows {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .fifth__button {
@@ -286,26 +286,16 @@ a:hover {
 
 .fifth__button:hover {
 	background: #fff;
-	border: none;
+	border: 1px solid #fff;
 }
 
 .fifth__block {
 	background:#fed100;
 }
 
-.fifth__block__window__one {
-	width: 26rem;
-	height: 20rem;
-}
-
-.fifth__block__window__two {
-	width: 26rem;
-	height: 20rem;
-}
-
-.fifth__block__window__three {
-	width: 26rem;
-	height: 20rem;
+.fifth__block__window {
+	width: 100%;
+	margin-bottom: 2rem;
 }
 
 .fifth__button1 {
@@ -335,56 +325,67 @@ select {
 }
 
 .sixth__block__title {
-	
+	margin-bottom: 3rem;
+	width: 100%;
 }
 
 .name__number {
-	display: flex;
-	gap: 2rem;
-	
-}
-
-.name {
-	width: 40%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 2rem;
 }
 
 .text__name {
-	width: 90%;
-}
-
-.numberr {
-	width: 50%;
+	width: 60%;
 }
 
 .text__numberr {
-	width: 70%;
+	width: 60%;
 }
 
 .region__town {
-	display: flex;
-	gap: 2rem;
-	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 2rem;
 }
 
 .region {
-	width: 40%;
+	width: 67%;
 }
 
 .town {
-	width: 50%;
+	width: 86%;
 }
 
-.payment__title { 
-	
+.payment {
+	margin-bottom: 2rem;
+}
+
+.payment__buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+}
+
+.buttons__block {
+	display: flex;
+}
+
+.services {
+	margin-bottom: 1rem;
+}
+
+.services__inputs1 {
+	margin-bottom: 1rem;
+}
+
+.services__inputs2 {
+	margin-bottom: 2rem;
 }
 
 .services__title {
-	
-}
-.payment__buttons {
 	display: flex;
-  gap: 2rem;
-
+	gap: 3rem;
 }
 
 .sixth__button {
@@ -393,7 +394,7 @@ select {
 	background-color: var(--red);
 	display: inline-block;
 	cursor: pointer;
-	height: 3.1rem;
+	height: 10%;
 	font-size: 16px;
 }
 
@@ -403,16 +404,17 @@ select {
 
 #time {
 	font-size: 86px;
-	width: 23.5rem;
-	height: 8rem;
+	width: 50%;
 }
 
 .time__button {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .give {
 	display: flex;
+	margin-bottom: 4rem;
 }
 
 .services {
@@ -420,12 +422,12 @@ select {
 }
 
 .services__inputs1 {
-	display: flex;
+	display: none;
 	gap: 0.6rem;
 }
 
 .services__inputs2 {
-	display: flex;
+	display: none;
 	gap: 2rem;
 }
 
@@ -447,7 +449,7 @@ select {
 
 .call:hover {
 	background: #fff;
-	border: none;
+	border: 1px solid #fff;
 }
 
 .end {
@@ -470,6 +472,7 @@ select {
 
 .feedback__end {
 	text-align: center;
+	margin-top: 2rem;
 }
 
 .region__select {
@@ -488,6 +491,10 @@ input[type="checkbox"] {
 	display: none;
 }
 
+input[type="radio"] {
+	display: none;
+}
+
 label {
 	padding-left: 20px;
 }
@@ -501,11 +508,11 @@ label[class="first__label"]::before {
 	border: 2px solid rgba(51, 51, 51, 0.4);
 	border-radius: 50%;
 	vertical-align: middle;
-	margin-left: -10px;
+	margin-left: -11px;
 	margin-right: 10px;
 }
 
-input[type="checkbox"]:checked + label[class="first__label"]::before {
+input[type="radio"]:checked + label[class="first__label"]::before {
 	content: url(input1.png);
 	text-align: center;
 	border: 2px solid #fed100;
@@ -552,6 +559,54 @@ input[type="checkbox"]:checked + label[class="third__label"]::before {
 	text-align: center;
 	border: none;
 	border-radius: 20%;
-
 }
-  
+
+.services__dop {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	font-size: 24px;
+	border: none;
+	background: #fff;
+	cursor: pointer;
+}
+
+.services__dop1 {
+	display:none;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	font-size: 24px;
+	border: none;
+	background: #fff;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 30px;
+	text-align: center;
+	height: 20%;
+}
+
+.title1 {
+	font-size: 30px;
+	width: 100%;
+}
+
+.button__of {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.number__end {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.payment__title {
+	width: 40%;
+}
