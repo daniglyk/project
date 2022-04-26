@@ -56,12 +56,30 @@ a:hover {
 	gap: 2rem;
 }
 
+@media (max-width: 592px) {
+	.header__menu {
+		display: none;
+	}
+}
+
 .header__phone {
 	text-decoration: underline;
 }
 
+@media (max-width: 592px) {
+	.header__phone {
+		display: none;
+	}
+}
+
 .banner__content {
 	display: flex;
+}
+
+@media (max-width: 768px) {
+	.banner__content {
+		display: block;
+	}
 }
 
 .banner__info {
@@ -73,10 +91,28 @@ a:hover {
 	margin-bottom: 1rem;
 }
 
+@media (max-width: 768px) {
+	.banner__title {
+	font-size: 3rem;
+}}
+
+@media (max-width: 385px) {
+	.banner__title {
+	font-size: 2rem;
+}}
+
 .banner__subtitle {
 	font-size: 30px;
 	margin-bottom: 3rem;
 }
+
+@media (max-width: 385px) {
+	.banner__subtitle {
+	font-size: 1rem;
+}}
+
+
+
 
 .banner__button {
 	padding: 1rem 6rem;
@@ -87,19 +123,43 @@ a:hover {
 	margin-bottom: 3rem;
 }
 
+@media (max-width: 768px) {
+	.banner__button {
+		
+}}
+
 .banner__button:hover {
 	background-color: var(--orange);
 }
 
 .banner__pluses {
 	display: flex;
+	gap: 1.5rem;
 }
+@media (max-width: 980px) {
+	.banner__pluses {
+		display: grid;
+	grid-template-columns: 1fr 1fr;
+}}
+
+@media (max-width: 768px) {
+	.banner__pluses {
+		display: grid;
+	grid-template-columns: 1fr 1fr;
+}}
+
+@media (max-width: 385px) {
+	.banner__pluses {
+		display: grid;
+	grid-template-columns: 1fr;
+}}
 
 .banner__plus {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
 }
+
 
 .banner__image {
 	max-width: 30rem;
@@ -135,8 +195,13 @@ a:hover {
 	gap: 4rem 1.5rem;
 }
 
+@media (max-width: 1050px) {
+	.all__number {
+		display: grid;
+	grid-template-columns: 1fr;
+}}
+
 .one__and__two {
-	
 	flex: 0 1 50%;
 }
 
@@ -149,6 +214,8 @@ a:hover {
 	display: flex;
 	gap: 2rem;
 }
+
+
 
 .landing__info {
 	height: 40%;
@@ -175,10 +242,27 @@ a:hover {
 	gap: 0 1.5rem;
 }
 
+@media (max-width: 880px) {
+	.all__window {
+		display: grid;
+	grid-template-columns: 1fr 1fr;
+}}
+
+@media (max-width: 600px) {
+	.all__window {
+		display: grid;
+	grid-template-columns: 1fr;
+}}
+
 .third__block__title {
 	text-align: center;
 	height: 8rem;
 }
+
+@media (max-width: 390px) {
+	.third__block__title {
+		margin-bottom: 1rem;
+}}
 
 .widnow__title {
 	font-size: 24px;
@@ -220,6 +304,18 @@ a:hover {
 	margin-bottom: 2rem;
 }
 
+@media (max-width: 900px) {
+	.buttons_four {
+		display: grid;
+	grid-template-columns: 1fr 1fr;
+}}
+
+@media (max-width: 630px) {
+	.buttons_four {
+		display: grid;
+	grid-template-columns: 1fr;
+}}
+
 .fourth__block__button {
 	border: 1px solid #EBEBEB;
 	font-size: 20px;
@@ -227,6 +323,11 @@ a:hover {
 	text-align:center;
 	background: #fff;
 }
+
+@media (max-width: 900px) {
+	.ourth__block__button {
+		padding: 1rem 5rem;
+}}
 
 .fourth__block__button:hover {
 	border: 1px solid #Fed100;
@@ -237,9 +338,23 @@ a:hover {
 	grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 650px) {
+	.fourth__block__window {
+	grid-template-columns: 1fr;
+}}
+
+
+
+
+
 .left__fourth__block {
-	width: 46%;
 }
+
+@media (max-width: 1000px) {
+	.cars {
+		width:100%;
+		height:100%;
+}}
 
 .fourth__block__buttons {
 	padding: 1rem 5rem;
@@ -259,10 +374,20 @@ a:hover {
 	grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 650px) {
+	.fourth__block__window1 {
+	grid-template-columns: 1fr;
+}}
+
 .fourth__block__window2 {
 	display: none;
 	grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 650px) {
+	.fourth__block__window2 {
+	grid-template-columns: 1fr;
+}}
 
 .fifth__block__title {
 	text-align: center;
@@ -272,6 +397,16 @@ a:hover {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
+
+@media (max-width: 900px) {
+	.fifth__block__windows {
+	grid-template-columns: 1fr 1fr;
+}}
+
+@media (max-width: 700px) {
+	.fifth__block__windows {
+	grid-template-columns: 1fr;
+}}
 
 .fifth__button {
 	border: 1px solid #333333;
@@ -335,13 +470,19 @@ select {
 	margin-bottom: 2rem;
 }
 
-.text__name {
+@media (max-width: 550px) {
+	.name__number {
+	grid-template-columns: 1fr;
+}}
+
+
+/*
 	width: 60%;
 }
 
 .text__numberr {
 	width: 60%;
-}
+} */
 
 .region__town {
 	display: grid;
@@ -349,13 +490,18 @@ select {
 	margin-bottom: 2rem;
 }
 
-.region {
+@media (max-width: 550px) {
+	.region__town {
+	grid-template-columns: 1fr;
+}}
+
+/* .region {
 	width: 67%;
 }
 
 .town {
 	width: 86%;
-}
+} */
 
 .payment {
 	margin-bottom: 2rem;
@@ -366,6 +512,11 @@ select {
 	grid-template-columns: 1fr 1fr 1fr;
 	width: 100%;
 }
+
+@media (max-width: 550px) {
+	.payment__buttons {
+	grid-template-columns: 1fr;
+}}
 
 .buttons__block {
 	display: flex;
@@ -385,7 +536,14 @@ select {
 
 .services__title {
 	display: flex;
-	gap: 3rem;
+	gap: 2rem;
+}
+
+@media (max-width:550px) {
+	.services__title {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }
 
 .sixth__button {
@@ -398,19 +556,30 @@ select {
 	font-size: 16px;
 }
 
+@media (max-width:550px) {
+	.sixth__button {
+		padding: 1rem 3rem;
+	}
+}
+
 .sixth__button:hover {
 	background-color: var(--orange);
 }
 
-#time {
+/* #time {
 	font-size: 86px;
 	width: 50%;
-}
+} */
 
 .time__button {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 550px) {
+	.time__button {
+	grid-template-columns: 1fr;
+}}
 
 .give {
 	display: flex;
@@ -447,6 +616,11 @@ select {
 	background: #fed100;
 }
 
+@media (max-width: 750px) {
+	.call {
+		padding: 0.1rem 4rem;
+}}
+
 .call:hover {
 	background: #fff;
 	border: 1px solid #fff;
@@ -461,10 +635,28 @@ select {
 	gap: 4rem;
 }
 
+@media (max-width: 750px) {
+	#contact  {
+	display: grid;
+	grid-template-columns: 1fr;
+}}
+
 .menu__end1 {
 	line-height: 2;
 	font-size: 20px;
 }
+
+@media (max-width: 750px) {
+	.menu__end  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}}
+
+@media (max-width: 340px) {
+	.menu__end  {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}}
 
 .name__end__title {
 	font-size: 30px;
@@ -475,13 +667,18 @@ select {
 	margin-top: 2rem;
 }
 
-.region__select {
+@media (max-width: 750px) {
+	.feedback__end  {
+		margin-top: 0.1rem;
+}}
+
+/* .region__select {
 	width: 90%;
 }
 
 .town__select {
 	width: 70%;
-}
+} */
 
 .title__sixth {
 	font-size: 20px;
@@ -567,10 +764,11 @@ input[type="checkbox"]:checked + label[class="third__label"]::before {
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	transform: rotate(90deg);
-	font-size: 24px;
+	font-size: 16px;
 	border: none;
 	background: #fff;
 	cursor: pointer;
+	max-width:10px;
 }
 
 .services__dop1 {
@@ -584,6 +782,7 @@ input[type="checkbox"]:checked + label[class="third__label"]::before {
 	border: none;
 	background: #fff;
 	cursor: pointer;
+	max-width:10px;
 }
 
 .title {
@@ -607,6 +806,8 @@ input[type="checkbox"]:checked + label[class="third__label"]::before {
 	margin-bottom: 1rem;
 }
 
-.payment__title {
+
+/* .payment__title {
 	width: 40%;
-}
+} */
+
