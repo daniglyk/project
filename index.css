@@ -111,9 +111,6 @@ a:hover {
 	font-size: 1rem;
 }}
 
-
-
-
 .banner__button {
 	padding: 1rem 6rem;
 	color: var(--white);
@@ -123,10 +120,6 @@ a:hover {
 	margin-bottom: 3rem;
 }
 
-@media (max-width: 768px) {
-	.banner__button {
-		
-}}
 
 .banner__button:hover {
 	background-color: var(--orange);
@@ -214,8 +207,6 @@ a:hover {
 	display: flex;
 	gap: 2rem;
 }
-
-
 
 .landing__info {
 	height: 40%;
@@ -333,22 +324,15 @@ a:hover {
 	border: 1px solid #Fed100;
 }
 
-.fourth__block__window {
+/* #windows {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 650px) {
-	.fourth__block__window {
+	#windows {
 	grid-template-columns: 1fr;
-}}
-
-
-
-
-
-.left__fourth__block {
-}
+}} */
 
 @media (max-width: 1000px) {
 	.cars {
@@ -368,26 +352,25 @@ a:hover {
 .fourth__block__buttons:hover {
 	background-color:#c3a004;
 }
+#fourth__block__window {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 
-.fourth__block__window1 {
+@media (max-width: 650px) {
+	#fourth__block__window {
+	grid-template-columns: 1fr;
+}}
+
+/* #windows2 {
 	display: none;
 	grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 650px) {
-	.fourth__block__window1 {
+	#windows2 {
 	grid-template-columns: 1fr;
-}}
-
-.fourth__block__window2 {
-	display: none;
-	grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width: 650px) {
-	.fourth__block__window2 {
-	grid-template-columns: 1fr;
-}}
+}} */
 
 .fifth__block__title {
 	text-align: center;
@@ -475,15 +458,6 @@ select {
 	grid-template-columns: 1fr;
 }}
 
-
-/*
-	width: 60%;
-}
-
-.text__numberr {
-	width: 60%;
-} */
-
 .region__town {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -494,14 +468,6 @@ select {
 	.region__town {
 	grid-template-columns: 1fr;
 }}
-
-/* .region {
-	width: 67%;
-}
-
-.town {
-	width: 86%;
-} */
 
 .payment {
 	margin-bottom: 2rem;
@@ -565,11 +531,6 @@ select {
 .sixth__button:hover {
 	background-color: var(--orange);
 }
-
-/* #time {
-	font-size: 86px;
-	width: 50%;
-} */
 
 .time__button {
 	display: grid;
@@ -671,14 +632,6 @@ select {
 	.feedback__end  {
 		margin-top: 0.1rem;
 }}
-
-/* .region__select {
-	width: 90%;
-}
-
-.town__select {
-	width: 70%;
-} */
 
 .title__sixth {
 	font-size: 20px;
@@ -806,8 +759,28 @@ input[type="checkbox"]:checked + label[class="third__label"]::before {
 	margin-bottom: 1rem;
 }
 
+.fourth__in__all {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-/* .payment__title {
-	width: 40%;
-} */
+.next {
+	margin-top: 80%;
+	width: 20%;
+	height: 10%;
+	background: #fff;
+	border: none;
+}
 
+.prev {
+	margin-top: 80%;
+	width: 20%;
+	height: 10%;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	background: #fff;
+	border: none;
+}
