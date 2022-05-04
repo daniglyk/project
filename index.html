@@ -17,15 +17,37 @@
                 <div class="header__logo">
                     MOVEE
                 </div>
+                
 
-                <nav class="header__menu">
-                    <a href="#price" class="header__link">Цены</a>
-                    <a href="#auto" class="header__link">Автопарк</a>
-                    <a href="#feedback" class="header__link">Отзывы</a>
-                    <a href="#contact" class="header__link">Контакты</a>
-                </nav>
+            
+                
+
+
+
+
+
+          <nav class="header__menu">
+            <a href="#price" class="header__link">Цены</a>
+            <a href="#auto" class="header__link">Автопарк</a>
+            <a href="#feedback" class="header__link">Отзывы</a>
+            <a href="#contact" class="header__link">Контакты</a>
+        </nav>
 
                 <a href="tel:8(029)-999-12-1" class="header__phone">8(029)-999-12-13</a>
+
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <li><a href="#price" class="header__link">Цены</a></li>
+                        <li><a href="#auto" class="header__link">Автопарк</a></li>
+                        <li><a href="#feedback" class="header__link">Отзывы</a></li>
+                        <li><a href="#contact" class="header__link">Контакты</a></li>
+                    </nav>
+                </div>
             </header>
             
             <div class="banner__content">
@@ -211,29 +233,33 @@
             <div class="fifth__block__window">
                 <h2>Ирина</h2>
                 <p>24.03.2019 <img src="звезда.png"><img src="звезда.png"><img src="звезда.png"><img src="звезда.png"><img src="звезда.png"></p>
-                <p>Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
+                <p class="text__feedback">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом 
                 во двор, он проявил себя как компетентный 
-                и профессиональный сотрудник, за что ему огромное...  </p>
-                <span>Читать полностью</span>
+                и профессиональный сотрудник, за что ему огромное</p>
             </div>
 
+            
             <div class="fifth__block__window">
                 <h2>Светлана Васильевна</h2>
                 <p>13.09.2019 <img src="звезда.png"><img src="звезда.png"><img src="звезда.png"><img src="звезда.png"><img src="звезда.png"></p>
-                <p>Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.
-                Когда....  </p>
-                <span>Читать полностью</span>
+                <p class="text__feedback">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к нам опоздали на 1,5 часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час).  Водитель заранее позвонил, предупредил, что задерживается.
+                Когда</p>
             </div>
 
             <div class="fifth__block__window">
                 <h2>Ольга Петровна</h2>
                 <p>11.11.2019 <img src="звезда.png"><img src="звезда.png"><img src="звезда.png"><img src="звезда.png"><img src="звезда.png"></p>
-                <p>Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, 
+                <p class="text__feedback">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, 
                 что упрощает расчет. Безо всяких заморочек, 
                 в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в сохранности. Особая благодарность 
-                Александру за его...   </p>
-                <span>Читать полностью</span>
+                Александру за его</p>
+
             </div>
+        </div>
+        <div class="allSpan">
+            <span class="readAll" href="#">Читать полностью</span>
+            <span class="readAll" href="#">Читать полностью</span>
+            <span class="readAll" href="#">Читать полностью</span>
         </div>
 
         <div class="fifth__button1">
@@ -317,7 +343,11 @@
 
         
         <div class="time__button">
-                <div id="time"></div>
+                <div id="time">
+                        <span id="timer-hours"></span>
+                        <span id="timer-mins"></span>
+                        <span id="timer-secs"></span>
+                </div>
                     
                     <div class="button__give">    
                         <div class="button__of">
@@ -371,10 +401,18 @@
                                 <a href="tel:8(029)-999-12-1" class="header__phone">8(029)-999-12-13</a>
                             </div>
                             <div class="ceti">
-                                <a href="https://www.instagram.com/badgalriri/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="https://vk.com/durov"><i class="fa-brands fa-vk fa-2xl" target="_blank"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                                <div class="instagram-share">
+                                <a href="https://www.instagram.com/badgalriri/" target="_blank" onclick="Share.me(this);"><i class="fa-brands fa-instagram fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="vk-share">
+                                <a href="https://vk.com/durov" target="_blank" onclick="Share.me(this);"><i class="fa-brands fa-vk fa-2xl" target="_blank"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="youtube-share">
+                                <a href="https://www.youtube.com/" target="_blank" onclick="Share.me(this);"><i class="fa-brands fa-youtube fa-2xl"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                                <div class="facebook-share">
+                                <a href="https://www.facebook.com/" target="_blank" onclick="Share.me(this);"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

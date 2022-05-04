@@ -1,14 +1,8 @@
+// слайдер
 let index = 0;
 let cars = document.querySelectorAll(".fourth__block__window");
 let maxIndex = cars.length - 1;
 let fourstButtons = document.querySelectorAll(".fourth__block__button");
-
-
-for (let i = 0; i <= maxIndex; i++) {  
-  fourstButtons[i] === fourstButtons[index]
-    ? (fourstButtons[i].style.border = "1px solid #Fed100")
-    : (fourstButtons[i].style.border = "1px solid #EBEBEB");
-    }
 
 for (let i = 0; i <= maxIndex; i++) {
   cars[i] === cars[index]
@@ -49,33 +43,142 @@ const scrollPrev = () => {
 };
 prev.addEventListener('click', scrollPrev);
 
- 
+const buttons = document.querySelector(".buttons_four");
 
+const scrollSlider =  (event) => {
+  let el = event.target;
 
-const allButtons = document.querySelector('.buttons_four')
-
-function showSlides () {
-  index === maxIndex ? (index = 0) : (index += 1);
-  for (let i = 0; i <= maxIndex; i++) {
-    cars[i] === cars[index]
-      ? (cars[i].style.display = "flex")
+  for (let i = 0; i <= fourstButtons.length - 1; i++) {
+    if (el === fourstButtons[i]) {
+      index = i;
+      for (let i = 0; i <=maxIndex; i++) {
+        cars[i] === cars[index]
+        ? (cars[i].style.display = "flex")
       : (cars[i].style.display = "none");
+      }
+      for (let i = 0; i <= maxIndex; i++) { 
+        fourstButtons[i] === fourstButtons[index]
+      ? (fourstButtons[i].style.border = "1px solid #Fed100")
+      : (fourstButtons[i].style.border = "1px solid #EBEBEB");
+      }
+    }
   }
+} 
+
+buttons.addEventListener('click', scrollSlider);
+
+// комментарии
+
+let feedBack = document.querySelectorAll(".text__feedback");
+let read = document.querySelectorAll(".readAll");
+const readButtons = document.querySelector(".allSpan");
+
+
+
+const allText =  (event) => {
+  let el = event.target;
+
+  for (let i = 0; i <= read.length - 1; i++) {
+    if (el === read[i]) {
+      index = i;
+      for (let i = 0; i <= feedBack.length - 1; i++) {
+       if (feedBack[i] === feedBack[index]) {
+         (feedBack[i].style.overflow = "visible")} 
+      }
+    }
+  }
+} 
+
+readButtons.addEventListener('click', allText);
+
+// доп функции
+
+var servicesElement1 = document.querySelector('.services__inputs1')
+var servicesElement2 = document.querySelector('.services__inputs2')
+var servicesElement3 = document.querySelector('.services__dop')
+var servicesElement4 = document.querySelector('.services__dop1')
+
+servicesElement3.addEventListener('click', function () {
+    servicesElement1.style.display = 'flex'
+    servicesElement2.style.display = 'flex'
+    servicesElement3.style.display = 'none'
+    servicesElement4.style.display = 'block'
+  })
+
+  servicesElement4.addEventListener('click', function () {
+    servicesElement1.style.display = 'none'
+    servicesElement2.style.display = 'none'
+    servicesElement3.style.display = 'block'
+    servicesElement4.style.display = 'none'
+  }) 
+
+ // валидация 
+function validate() {
+  var username = document.getElementByClassName(".text__name");
+  var usertel = document.getElementByClassName(".text__numberr");
+
+  if (!username.value) {
+    username.style.border = "2px solid red";
+    return false;
+  }
+  if (!usertel.value) {
+    usertel.style.border = "2px solid red";
+    return false;
+  }
+  return true;
 }
 
-allButtons.addEventListener('click', function (event) {
-  if (event.target('.fourth__block__button')) {
-    showSlides();
+
+// таймер
+
+var endDate = new Date("May 30, 2022 12:00:00").getTime();
+
+var timer = setInterval(function() {
+  let now = new Date().getTime();
+  let t = endDate - now;
+  
+  if (t >= 0) {
+  
+      let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      let secs = Math.floor((t % (1000 * 60)) / 1000);
+
+  
+      document.getElementById("timer-hours").innerHTML = ("0"+hours).slice(-2) +
+      "<span class='label'>:</span>";
+  
+      document.getElementById("timer-mins").innerHTML = ("0"+mins).slice(-2) +
+      "<span class='label'>:</span>";
+  
+      document.getElementById("timer-secs").innerHTML = ("0"+secs).slice(-2);
+  
+  } else {
+      document.getElementById("timer").innerHTML = "The countdown is over!";
+  
   }
+  
+}, 1000);
 
+// поделиться в соц сетях
+
+Share = {
+  me : function(el){
+      Share.popup(el.href);
+      return false;
+  },
+
+  popup: function(url) {
+      window.open(url,'','toolbar=0,status=0,width=626,height=436');
+  }
+};
+
+// бургер меню
+
+
+
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
 })
-
-// const func1 = (event) => {
-//   let el = event.target;
-//   for (let i = 0; i < allButtons.length; i++) {
-//     el === allButtons[i]
-//       ? allButtons[i].classList.add("hover")
-//       : allButtons[i].classList.remove("hover");
-//   }
-// };
-// allButtons.addEventListener("mouseover", func1);
