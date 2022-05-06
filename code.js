@@ -69,53 +69,58 @@ buttons.addEventListener('click', scrollSlider);
 
 // комментарии
 
-let feedBack = document.querySelectorAll(".text__feedback");
-let read = document.querySelectorAll(".readAll");
-const readButtons = document.querySelector(".allSpan");
-
-
-
-const allText =  (event) => {
-  let el = event.target;
-
-  for (let i = 0; i <= read.length - 1; i++) {
-    if (el === read[i]) {
-      index = i;
-      for (let i = 0; i <= feedBack.length - 1; i++) {
-       if (feedBack[i] === feedBack[index]) {
-         (feedBack[i].style.overflow = "visible")} 
-      }
-    }
-  }
-} 
-
-readButtons.addEventListener('click', allText);
+function reviews__card_text(elt, he, tr){
+  var hs = he+'px',temp,
+  elt = document.querySelectorAll(elt);
+  [].forEach.call(elt, function(el,i){
+  el.insertAdjacentHTML('afterend', '<div class="reviews__link1">Читать полностью</div>');
+  el.style.height = hs;
+  el.style.transition = tr+'s';
+  el.nextElementSibling.addEventListener('click', function(e){
+  var prev = this.previousElementSibling;
+  if (prev.style.height == hs) {
+  prev.style.height = prev.scrollHeight+'px';
+  setTimeout(()=>{
+  prev.style.height = 'auto';
+ prev.style.transition = '0s';
+  },tr*1000);
+ this.textContent = "Свернуть";
+ this.classList.add('open');
+ }
+else {
+prev.style.height = getComputedStyle(el).height;
+prev.style.transition = tr+'s';
+setTimeout(()=>prev.style.height = hs,0);
+this.textContent ='Читать полностью';
+this.classList.remove('open');
+}
+});
+});
+}
+onload = function(){
+reviews__card_text('.reviews__card_text',143, 1); 
+;
+};
 
 // доп функции
 
-var servicesElement1 = document.querySelector('.services__inputs1')
-var servicesElement2 = document.querySelector('.services__inputs2')
-var servicesElement3 = document.querySelector('.services__dop')
-var servicesElement4 = document.querySelector('.services__dop1')
-
-servicesElement3.addEventListener('click', function () {
-    servicesElement1.style.display = 'flex'
-    servicesElement2.style.display = 'flex'
-    servicesElement3.style.display = 'none'
-    servicesElement4.style.display = 'block'
-  })
-
-  servicesElement4.addEventListener('click', function () {
-    servicesElement1.style.display = 'none'
-    servicesElement2.style.display = 'none'
-    servicesElement3.style.display = 'block'
-    servicesElement4.style.display = 'none'
-  }) 
+function order__show() {
+  document.getElementById("checkbox_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+  document.getElementById("order__show").setAttribute("style", "display: none");
+  document.getElementById("order__hidden").setAttribute("style", "display: block");
+  }
+  
+  function order__hidden() {
+  document.getElementById("checkbox_hide").setAttribute("style", "display: none");
+  document.getElementById("order__hidden").setAttribute("style", "display: none");
+  document.getElementById("order__show").setAttribute("style", "display: block");
+  }
 
  // валидация 
-function validate() {
-  var username = document.getElementByClassName(".text__name");
-  var usertel = document.getElementByClassName(".text__numberr");
+
+ function validate() {
+  var username = document.getElementById("username");
+  var usertel = document.getElementById("usertel");
 
   if (!username.value) {
     username.style.border = "2px solid red";
@@ -173,8 +178,6 @@ Share = {
 };
 
 // бургер меню
-
-
 
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
