@@ -268,7 +268,7 @@
             <h2 class="title1">Закажи переезд прямо сейчас со скидкой %</h2>
             <p>Мы перезвоним в течении 10 секунд</p>
         </div>
-        <form name="order__form" method="get" action="#" onsubmit=" validate ()">    
+        <form class="form" name="order__form" method="get" action="#" onsubmit="return validate ()">    
             <div class="order__column_form">
                   <div><input placeholder="Ваше имя" type="text" id="username" value=""></div>
                   <div><input placeholder="Телефон" type="tel" id="usertel" value=""></div>
@@ -356,7 +356,7 @@
                          </div>
                   </div>
                   <div class="order__row_column">
-                        <button type="submit" class="order__buttom">Заказать со скидой</button> 
+                        <button type="submit" class="order__buttom" id="honor">Заказать со скидой</button> 
                         <div class="order__buttom_end">Заказать со скидкой</div>  
                         <div class="order__agree">
                               <label class="third__label"> <input type="checkbox" class="agree"> Даю согласие на обработку данных</label></div>

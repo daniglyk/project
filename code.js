@@ -133,6 +133,11 @@ function order__show() {
   return true;
 }
 
+// var myAnchor = document.getElementById("honor");
+// myAnchor.addEventListener("click", function(event) {
+//   event.preventDefault();
+// }, false);
+
 
 // таймер
 
